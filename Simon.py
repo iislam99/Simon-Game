@@ -160,6 +160,9 @@ def gameloop():
                     pyg.quit()
                     sys.exit()
                 
+                # Outer two if-statements detect if mouse is inside of a button
+                # Innermost if-statement executes if mouse is clicked
+                
                 # Distance between mouse and center of screen
                 m_x,m_y = pyg.mouse.get_pos()
                 dist = distance((m_x, m_y), (screenSize/2, screenSize/2))
